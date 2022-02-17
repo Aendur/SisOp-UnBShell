@@ -1,0 +1,32 @@
+#!/home/aendur/bin/unbsh
+
+processos -elf > texto.txt
+conta -l < texto.txt
+acha / -path /mnt -prune -o -print | filtra ime > /dev/null &
+dorme 100&
+pwd
+criadir -vp meu_dir
+muda meu_dir
+move -v ../texto.txt ../meu_dir/.
+historico
+historico 5
+
+#nova bateria de comandos
+muda ..
+criadir -vp tmp
+lista -a > ./tmp/saida.txt
+muda tmp
+mostra saida.txt ../meu_dir/texto.txt | conta -l
+uname -a
+
+# aqui neste ponto compila um programa c qualquer (exemplo.c) que imprime “Alo UnB. Feliz 2022!”.
+muda ..
+
+compila -o exemplo exemplo.c
+criadir -vp bin
+#muda exemplo ./bin/.
+move -v exemplo ./bin/.
+exemplo
+
+#fim do arquivo em lote
+

@@ -1,0 +1,21 @@
+
+PATH=.;/home/aendur/bin;/usr/local/sbin;/usr/local/bin;/usr/sbin;/usr/bin;/sbin;/bin
+
+alias "cd" "muda"
+alias "history" "historico"
+alias "exit" "sai"
+
+alias "ps" "processos"
+alias "rm" "remove"
+alias "mkdir" "criadir"
+alias "mv" "move"
+alias "cp" "copia"
+alias "ls" "lista"
+alias "grep" "filtra"
+alias "wc" "conta"
+alias "echo" "exibe"
+alias "gcc" "compila"
+alias "cat" "mostra"
+alias "find" "acha"
+alias "sleep" "dorme"
+
